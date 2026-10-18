@@ -1,3 +1,136 @@
-# Asgard
+<div align="center">
 
-Norse gods for Hermes Desktop. In progress.
+  <a href="https://github.com/NousResearch/hermes-agent">
+    <img src="https://github.com/user-attachments/assets/ac2f5702-c842-4b2e-9340-737481fa0ece" width="96" height="96" alt="Nous Research Hermes mark" />
+  </a>
+
+  # Asgard
+
+  **Twelve Norse gods for your Hermes desktop.**
+
+  Twelve themes for Hermes Desktop, carved in runestone and wood. Each god fills the carving with their own colour,
+  brings their own lettering, and sets the HERMES AGENT name on a runic band:
+  Odin's red runes, Thor's lightning, Loki's green fire, Heimdall's rainbow.
+
+  <sub>FOR <a href="https://github.com/NousResearch/hermes-agent">HERMES DESKTOP</a> &nbsp;·&nbsp; COMMUNITY THEMES &nbsp;·&nbsp; VERSION 0.1.0</sub>
+
+  <br /><br />
+
+  [Try it in a minute](#try-it-in-a-minute) &nbsp;·&nbsp; [Meet the twelve](#meet-the-twelve) &nbsp;·&nbsp; [Switch any time](#switch-any-time)
+
+</div>
+
+![Twelve narrow columns side by side, one per god, each with a carved Norse head at the top, the god's name in its own lettering in the middle, and a knotwork fragment at the bottom, from Odin's granite and red runes to Skadi's snow](media/banner.png)
+
+## Try it in a minute
+
+You need Hermes Desktop 0.22.2 or later. You don't need a terminal.
+
+**1. Install.** In Hermes Desktop, open **Capabilities → Plugins** and click **Install from Git**. Paste this address, click **Review repository**, then install:
+
+```text
+https://github.com/Adolanium/hermes-asgard
+```
+
+<details>
+<summary>Prefer the terminal?</summary>
+
+<br />
+
+```sh
+hermes plugins install Adolanium/hermes-asgard
+```
+
+If it asks whether to enable the plugin, either answer works. That switch is for the agent side, and Asgard has nothing there.
+
+</details>
+
+**2. Turn it on.** **Asgard** now appears in **Capabilities → Plugins**. Flip its **Desktop** switch on. Desktop plugins installed from a package start turned off, and this is the step people miss.
+
+**3. Pick a god.** Type this in the message box and press Enter:
+
+```text
+/skin odin
+```
+
+The whole app changes on the spot, with no restart. Try `/skin loki` next, or plain `/skin` to step through every theme you have.
+
+## Meet the twelve
+
+Click a card to see the full window.
+
+| [![Odin: granite and runic red, the all-father](media/cards/odin.png?v=0.1.0)](media/shots/odin.png?v=0.1.0) | [![Thor: dark oak and lightning blue, the thunderer](media/cards/thor.png?v=0.1.0)](media/shots/thor.png?v=0.1.0) |
+|:---:|:---:|
+| [![Freyja: birch, amber and rose, goddess of love and war](media/cards/freyja.png?v=0.1.0)](media/shots/freyja.png?v=0.1.0) | [![Loki: black stone and green fire, the trickster](media/cards/loki.png?v=0.1.0)](media/shots/loki.png?v=0.1.0) |
+| [![Frigg: mist blue and silver, the queen who knows all fates](media/cards/frigg.png?v=0.1.0)](media/shots/frigg.png?v=0.1.0) | [![Baldur: sunlit straw and gold, the shining god](media/cards/baldur.png?v=0.1.0)](media/shots/baldur.png?v=0.1.0) |
+| [![Tyr: rust iron on dark stone, the god of oaths](media/cards/tyr.png?v=0.1.0)](media/shots/tyr.png?v=0.1.0) | [![Heimdall: night blue and rainbow, the watchman](media/cards/heimdall.png?v=0.1.0)](media/shots/heimdall.png?v=0.1.0) |
+| [![Hel: bone pale and shadow, queen of the dead](media/cards/hel.png?v=0.1.0)](media/shots/hel.png?v=0.1.0) | [![Skadi: snow and ice blue, the huntress of the mountains](media/cards/skadi.png?v=0.1.0)](media/shots/skadi.png?v=0.1.0) |
+| [![Freyr: harvest gold on dark oak, lord of sun and rain](media/cards/freyr.png?v=0.1.0)](media/shots/freyr.png?v=0.1.0) | [![Bragi: violet mead and silver, the god of poetry](media/cards/bragi.png?v=0.1.0)](media/shots/bragi.png?v=0.1.0) |
+
+## Switch any time
+
+Every Asgard theme is a normal Hermes theme, so all the usual ways to switch work:
+
+| Where | What to do |
+| --- | --- |
+| **Message box** | `/skin <name>`, for example `/skin freyja`. `/skin list` shows every theme; `/skin` alone moves to the next one. |
+| **Command palette** | Press <kbd>Ctrl</kbd> <kbd>K</kbd> (<kbd>⌘</kbd> <kbd>K</kbd> on macOS), choose **Change theme**, and pick one. |
+| **Settings** | **Settings → Appearance → Theme**. |
+
+The names are `odin`, `thor`, `freyja`, `loki`, `frigg`, `baldur`, `tyr`, `heimdall`, `hel`, `skadi`, `freyr` and `bragi`. To go back to the stock look, type `/skin nous`.
+
+Hermes remembers your choice for each profile, so a work profile can keep Odin while a personal one keeps Loki.
+
+## Small decisions, already made
+
+- **One install, twelve themes.** All twelve ship in a single plugin. There's nothing to choose at install time and nothing extra to download later.
+- **Carved, then coloured.** The art is incised runestone, oak and birch in the Viking styles, with the grooves filled in each god's colour: red runes for Odin, lightning for Thor, green fire for Loki, a rainbow for Heimdall.
+- **A frame of its own.** The HERMES AGENT wordmark sits on a runic band with notched knotwork edges, the active tab becomes a small shield, and the dividers are double cut lines.
+- **Your light or dark setting can't break the art.** Each theme keeps its own palette in both modes. Four are light (Freyja, Frigg, Baldur and Skadi); the other eight are dark.
+- **Nothing leaves your machine.** The art and the fonts are packed into `plugin.js`, so themes switch instantly and work fully offline.
+- **The chat stays readable.** The art lives in the sidebar and the empty new-session screen. Once a conversation starts, it's text on a calm ground.
+
+## Update or remove
+
+```sh
+hermes plugins update hermes-asgard
+hermes plugins remove hermes-asgard
+```
+
+Or use **Capabilities → Plugins**: switch **Asgard** off to hide the themes, or remove it from there. If an Asgard theme was active, Hermes goes back to its default theme.
+
+## What it touches
+
+- **Theme registration** through the Desktop plugin SDK, the same way any theme plugin adds itself to the picker.
+- **Style rules** that apply only while an Asgard theme is active, and disappear when you switch away.
+- **Fonts**, bundled inside the plugin under the [SIL Open Font License](LICENSES): IBM Plex Sans and IBM Plex Mono for the interface, and one wordmark face per god: Amarante (Odin), Germania One (Thor), Almendra (Freyja), New Rocker (Loki), Cormorant Unicase (Frigg), Spectral SC (Baldur), Grenze (Tyr), Eagle Lake (Heimdall), Pirata One (Hel), Federant (Skadi), MedievalSharp (Freyr), IM Fell DW Pica SC (Bragi).
+
+It makes no network requests, adds no agent tools, hooks, background processes or settings, and reads none of your data.
+
+The runic band, shield tabs and placement of the art style Hermes Desktop's own markup, because the plugin SDK has no slots for decoration yet. If a Desktop update renames that markup, those touches fall back to the plain palette. Nothing else breaks.
+
+## Compatibility
+
+| Hermes Desktop | Platform | Status |
+| --- | --- | --- |
+| 0.22.2 | Windows 11 | Tested |
+| 0.22.2 | macOS, Linux | Expected to work; not yet tested |
+
+Asgard installs alongside [Pantheon](https://github.com/Adolanium/hermes-pantheon), the Greek pack. Their theme names don't overlap, so both appear in the same picker.
+
+<br />
+
+<div align="center">
+  <strong>Asgard</strong><br />
+  <sub>Twelve gods, cut in stone.</sub>
+</div>
+
+<br />
+
+## License
+
+[MIT](LICENSE). The bundled fonts are under the SIL Open Font License; see [LICENSES](LICENSES).
+
+> **Community project**
+>
+> Asgard is an independent community theme pack. It is not affiliated with, endorsed by, sponsored by, or officially associated with [Nous Research](https://github.com/NousResearch) or the [Hermes Agent project](https://github.com/NousResearch/hermes-agent). Hermes, Hermes Agent, and Nous Research are names and marks belonging to their respective owners.
