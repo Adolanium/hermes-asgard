@@ -16,7 +16,7 @@
 
   <br /><br />
 
-  [Try it in a minute](#try-it-in-a-minute) &nbsp;·&nbsp; [Meet the twelve](#meet-the-twelve) &nbsp;·&nbsp; [Switch any time](#switch-any-time)
+  [See all twelve live](https://adolanium.github.io/hermes-asgard/) &nbsp;·&nbsp; [Try it in a minute](#try-it-in-a-minute) &nbsp;·&nbsp; [Meet the twelve](#meet-the-twelve) &nbsp;·&nbsp; [Switch any time](#switch-any-time)
 
 </div>
 
@@ -116,7 +116,12 @@ The runic band, shield tabs and placement of the art style Hermes Desktop's own 
 | 0.22.2 | Windows 11 | Tested |
 | 0.22.2 | macOS, Linux | Expected to work; not yet tested |
 
-Asgard installs alongside [Pantheon](https://github.com/Adolanium/hermes-pantheon), the Greek pack. Their theme names don't overlap, so both appear in the same picker.
+## More gods
+
+Asgard is one of three packs. They install side by side, and none of their theme names overlap, so every god shows up in the same picker.
+
+- **[Pantheon](https://github.com/Adolanium/hermes-pantheon)**: 18 Greek gods in dithered marble, all twelve Olympians and more. [See them live](https://adolanium.github.io/hermes-pantheon/).
+- **[Ennead](https://github.com/Adolanium/hermes-ennead)**: 12 Egyptian gods in painted relief and gold leaf. [See them live](https://adolanium.github.io/hermes-ennead/).
 
 <br />
 
