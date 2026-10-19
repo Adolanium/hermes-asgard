@@ -121,7 +121,7 @@ The runic band, shield tabs and placement of the art style Hermes Desktop's own 
 Asgard is one of three packs. They install side by side, and none of their theme names overlap, so every god shows up in the same picker.
 
 - **[Pantheon](https://github.com/Adolanium/hermes-pantheon)**: 18 Greek gods in dithered marble, all twelve Olympians and more. [See them live](https://adolanium.github.io/hermes-pantheon/).
-- **[Ennead](https://github.com/Adolanium/hermes-ennead)**: 12 Egyptian gods in painted relief and gold leaf. [See them live](https://adolanium.github.io/hermes-ennead/).
+- **[Kemet](https://github.com/Adolanium/hermes-kemet)**: 12 Egyptian gods in painted relief and gold leaf. [See them live](https://adolanium.github.io/hermes-kemet/).
 
 <br />
 
