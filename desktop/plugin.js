@@ -11,7 +11,7 @@
  * the plain palette rather than breaking anything.
  */
 
-import { THEMES_AREA } from '@hermes/plugin-sdk'
+import { THEMES_AREA, requestTheme } from '@hermes/plugin-sdk'
 
 const THEMES = [
  {
@@ -1162,6 +1162,33 @@ const desktopTheme = THEME => ({
   customCSS: cssFor(THEME)
 })
 
+// The terminal skins in cli/skins are named `asgard-<god>`. Hermes shares the
+// active skin with Desktop, and Desktop prefers a skin over a plugin theme, so a
+// terminal `/skin asgard-loki` would paint Desktop with the skin's palette
+// alone. Whenever that skin becomes the active theme, switch to the god's full
+// theme instead. This only changes Desktop's own pick; the terminal keeps its skin.
+const TERMINAL_SKIN_PREFIX = 'asgard-'
+
+function followTerminalSkins() {
+  const root = document.documentElement
+  const gods = new Set(THEMES.map(THEME => THEME.name))
+
+  const follow = () => {
+    const active = root.dataset.hermesTheme ?? ''
+    const god = active.startsWith(TERMINAL_SKIN_PREFIX) ? active.slice(TERMINAL_SKIN_PREFIX.length) : ''
+
+    if (gods.has(god)) {
+      requestTheme(god)
+    }
+  }
+
+  const observer = new MutationObserver(follow)
+  observer.observe(root, { attributes: true, attributeFilter: ['data-hermes-theme'] })
+  follow()
+
+  return () => observer.disconnect()
+}
+
 const PLUGIN = {"id": "asgard", "name": "Asgard"}
 
 export default {
@@ -1169,5 +1196,6 @@ export default {
   name: PLUGIN.name,
   register(ctx) {
     ctx.registerMany(THEMES.map(THEME => ({ id: THEME.name, area: THEMES_AREA, data: desktopTheme(THEME) })))
+    ctx.onDispose(followTerminalSkins())
   }
 }

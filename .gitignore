@@ -8,9 +8,13 @@
 !/desktop/
 !/docs/
 !/assets/
+!/cli/
 
 !/media/
 /media/*
 !/media/banner.png
 !/media/cards/
 !/media/shots/
+
+# Python bytecode from running cli/build_skins.py
+__pycache__/
