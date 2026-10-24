@@ -12,7 +12,7 @@
   brings their own lettering, and sets the HERMES AGENT name on a runic band:
   Odin's red runes, Thor's lightning, Loki's green fire, Heimdall's rainbow.
 
-  <sub>FOR <a href="https://github.com/NousResearch/hermes-agent">HERMES DESKTOP</a> &nbsp;·&nbsp; COMMUNITY THEMES &nbsp;·&nbsp; VERSION 0.1.0</sub>
+  <sub>FOR <a href="https://github.com/NousResearch/hermes-agent">HERMES DESKTOP</a> &nbsp;·&nbsp; COMMUNITY THEMES &nbsp;·&nbsp; VERSION 0.2.0</sub>
 
   <br /><br />
 
