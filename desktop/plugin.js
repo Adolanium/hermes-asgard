@@ -991,6 +991,47 @@ ${T} [data-slot="sidebar"] [data-slot="sidebar-content"] > *:last-child {
   padding-bottom: var(--pack-art-floor);
 }
 
+/* ── Shorter windows: smaller art, never cropped ─────────────────────────── */
+
+/* Below 1080px the full-size art leaves only a handful of sessions on screen,
+   so it steps down instead: the bust to 240px wide and the collage to 160px,
+   then the collage goes, then the bust drops to 160px. Each step shows the
+   whole image, and the header keeps the same 22px under the bust. */
+@media (max-height: 1079px) {
+  ${T} {
+    --pack-art-floor: 125px;
+  }
+
+  ${T} ${SIDEBAR_ZONE} > [data-panel-header] {
+    height: 202px !important;
+  }
+
+  ${T} ${SIDEBAR_ZONE} > [data-panel-header]::before {
+    background-size: 240px auto;
+    background-position: right top;
+  }
+
+  ${T} [data-slot="sidebar"]::before {
+    background-size: 160px auto;
+  }
+}
+
+@media (max-height: 859px) {
+  ${T} {
+    --pack-art-floor: 0px;
+  }
+}
+
+@media (max-height: 719px) {
+  ${T} ${SIDEBAR_ZONE} > [data-panel-header] {
+    height: 142px !important;
+  }
+
+  ${T} ${SIDEBAR_ZONE} > [data-panel-header]::before {
+    background-size: 160px auto;
+  }
+}
+
 /* ── Tabs: mono caps, a carved shield when active ────────────────────────── */
 
 ${T} [data-slot="pane-tab"],
